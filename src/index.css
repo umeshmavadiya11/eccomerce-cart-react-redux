@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+  margin: 0;
+  vertical-align: middle;
+    font-family: 'Calibri', sans-serif !important;
+    background-color:#eee
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home-main{
+  height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  background-image: url('./assets/bannar.jpg');
+}
+.qtyminus{
+  width: 34px;
+  height: 37px;
+  background: #212529;
+  text-align: center;
+  font-size: 19px;
+  line-height: 36px;
+  color: #fff;
+  cursor: pointer;
+}    
+.qtyplus{
+  width: 34px;
+  height: 37px;
+  background: #212529;
+  text-align: center;
+  font-size: 19px;
+  line-height: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+a .fa:hover{
+  color: #0d6efd !important;
+}
