@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import ProductsCard from '../components/productCard/productsCard';
 
 const Products = () => {
- const {data,loading}=useSelector(state=>state.produtcs);
+ const {data}=useSelector(state=>state.produtcs);
 
   return (
     <ProductsCard data={data}/>

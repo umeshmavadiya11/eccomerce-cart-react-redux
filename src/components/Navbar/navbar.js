@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
+// eslint-disable-next-line
 import './style.css'
 
 const Navbar = () => {

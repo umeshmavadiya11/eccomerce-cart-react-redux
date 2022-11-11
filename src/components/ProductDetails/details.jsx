@@ -26,7 +26,7 @@ import './style.css'
     </div>
     <div className="row">
       <div className="col-md-6">
-            <img width={"100%"}  src={productDetails?.image} />
+            <img width={"100%"}  src={productDetails?.image} alt={"product_image"} />
       </div>
       <div className="col-md-6">
         <div className="product-dtl">
@@ -133,7 +133,6 @@ import './style.css'
         </div>
       </div>
     </div>
-    <div style={{textAlign: 'center', fontSize: '14px', paddingBottom: '20px'}}>Get free icon packs for your next project at <a href="http://iiicons.in/" target="_blank" style={{color: '#ff5e63', fontWeight: 'bold'}}>www.iiicons.in</a></div>
   </div>
   )
 }

@@ -16,22 +16,22 @@ function ProductsCard({data}) {
                         <div className="product-wrapper mb-45 text-center">
                             <div className="product-img">
                                 <Link to={`/products/${item.id}`}>
-                                    <img width={150} className='avtar' src={item.image} alt={item.title} />
+                                    <img width={150} className='avtar'  src={item.image} alt={item.title} />
                                 </Link>
                                 <span className="text-center">
                                     <i className="fa fa-rupee" /> {item.price}
                                 </span>
                                 <div className="product-action">
                                     <div className="product-action-style">
-                                        <a>
+                                        <Link >
                                             <i className="fa fa-plus" />
-                                        </a>
-                                        <a >
+                                        </Link>
+                                        <Link >
                                             <i className="fa fa-heart" />
-                                        </a>
-                                        <a onClick={()=>handleCart(item)}>
+                                        </Link>
+                                        <Link onClick={()=>handleCart(item)}>
                                             <i className="fa fa-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

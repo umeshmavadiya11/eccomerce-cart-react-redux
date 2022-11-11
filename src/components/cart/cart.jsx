@@ -5,7 +5,7 @@ import {  DecreaseInCart, IncreaseInCart, RemoveToCart } from '../../redux/Actio
 
 
 const Cart = (props) => {
-    const {cartsData,loading}=useSelector(state=>state.cart);
+    const {cartsData}=useSelector(state=>state.cart);
     const dispatch=useDispatch();
     const handleDeleteCartItem=(id)=>{
         dispatch(RemoveToCart(id))
@@ -98,12 +98,12 @@ const Cart = (props) => {
         </td>
         <td colSpan={2} className="hidden-xs" />
         <td className="hidden-xs text-center">
-        {cartsData &&  <strong>Total <i className="fa fa-rupee" /> {cartsData?.map(i=>i.totalAmout).reduce((a, b) => a + b, 0)}</strong>}
+        {cartsData &&  <strong>Total <i className="fa fa-rupee" /> {cartsData?.map(i=>parseFloat(i.totalAmout)).reduce((a, b) => a + b, 0).toFixed(2)}</strong>}
         </td>
         <td>
-          <a href="#" className="btn btn-success btn-block">
+          <Link className="btn btn-success btn-block">
             Checkout <i className="fa fa-angle-right" />
-          </a>
+          </Link>
         </td>
       </tr>
     </tfoot>

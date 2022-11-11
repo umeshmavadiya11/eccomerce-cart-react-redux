@@ -13,7 +13,7 @@ export default function App(props) {
   const disptch= useDispatch();
  useEffect(() => {
    disptch(getAllProducts());
-  }, [])
+  }, [disptch])
   return (
     <BrowserRouter>
       <div>
